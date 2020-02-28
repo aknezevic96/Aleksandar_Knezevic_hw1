@@ -1,0 +1,3 @@
+Aleksandar Knezevic
+
+This program uses abstract factory to divide each design pattern into its own class, which implement a common interface. The builder then calls methods to build and generate the chosen design pattern. Since input is taken directly from user, only really class, method and identifier names can be used to replace templates. It cannot set specific types for fields or methods, those have to be edited or added by the user post-generation. It's also not written to java files. I wanted to use JSON to separate classes with their own methods and fields for easier parsing, but it ended up being redundant since it only takes in strings and each class method could have just shared strings.

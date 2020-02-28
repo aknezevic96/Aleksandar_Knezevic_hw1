@@ -1,0 +1,93 @@
+Aleksandar Knezevic
+
+This program outputs the java file(s) to console so it can be copied and pasted.
+This was programmed in IntelliJ IDEA with Gradle and this is structured so.
+
+Sample output for chain of responsibility:
+
+> Task :driver.main()
+abstract factory
+builder
+template
+facade
+factory method
+mediator
+visitor
+chain of responsibility
+Which of these design patterns do you desire?
+chain of responsibility
+20:22:59.197 [main] DEBUG driver - Chosen design pattern is chain of responsibility
+20:22:59.203 [main] DEBUG Generator - Chain instance created
+What would you like to name the handler interface?
+han
+20:23:03.197 [main] DEBUG makeTemplate - handler name is han
+Enter the identifier of the handler
+hani
+20:23:07.199 [main] DEBUG makeTemplate - handler identifier is hani
+Enter the name of the first request method
+gret
+20:23:13.203 [main] DEBUG makeTemplate - handler request name is gret
+Enter the name of the second request method
+rewq
+20:23:17.205 [main] DEBUG makeTemplate - handler request name is rewq
+Enter the name of the class
+clsw
+20:23:21.208 [main] DEBUG makeTemplate - class name is clsw
+Enter the identifier of the class
+clswi
+20:23:25.210 [main] DEBUG makeTemplate - class identifier is clswi
+Enter the name of the first concrete handler
+conh
+20:23:29.212 [main] DEBUG makeTemplate - concrete handler 1 name is conh
+Enter the name of the second concrete handler
+conhh
+20:23:32.214 [main] DEBUG makeTemplate - concrete handler 2 name is conhh
+package MyCoR;
+
+public interface han {
+  void gret(han hani);
+
+  void rewq(clsw clswi);
+}
+
+package MyCoR;
+
+public class clsw {
+  private int clswi;
+
+  clsw(int clswi) {
+    this.clswi = clswi;
+  }
+
+  int getclsw() {
+    return clswi;
+  }
+}
+
+package MyCoR;
+
+public class conh implements han {
+  private han hani;
+
+  public void gret(han hani) {
+    this.hani = hani;
+  }
+
+  public void rewq(clsw clswi) {
+  }
+}
+
+package MyCoR;
+
+public class conhh implements han {
+  private han hani;
+
+  public void gret(han hani) {
+    this.hani = hani;
+  }
+
+  public void rewq(clsw clswi) {
+  }
+}
+
+
